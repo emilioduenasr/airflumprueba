@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "323837756538",
+    "project_id": "airflumtest",
+    "storage_bucket": "airflumtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323837756538:android:659097585cbe3b13bb67c3",
+        "android_client_info": {
+          "package_name": "com.example.amstairflumtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323837756538-g38uoug4ae6qqsgu1np5arcq2prn5838.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amstairflumtest",
+            "certificate_hash": "447a3afbc63a106a3ecc121ef489757f3e2c7c4c"
+          }
+        },
+        {
+          "client_id": "323837756538-lnnmi2g6focfv2p88a57vvsi4cnl85ij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjWTprOXIKHUov5E178egYwDnYqkOREoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323837756538-lnnmi2g6focfv2p88a57vvsi4cnl85ij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
