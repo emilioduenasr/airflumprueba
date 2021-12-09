@@ -27,7 +27,8 @@ public class Menu extends AppCompatActivity {
         btn_EscenariosReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Menu.this,Escenario_registrado.class);
+                startActivity(intent);
             }
         });
         //Funcion para registrar nuevos escenarios

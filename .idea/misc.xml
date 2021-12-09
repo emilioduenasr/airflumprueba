@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/airflumprueba/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.2" />
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.22" />
         <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_main.xml" value="0.16246154322878156" />
         <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_splash_screen.xml" value="0.14030769642485683" />
         <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_usuario.xml" value="0.16246154322878156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_escenario_registrado.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.264" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_splash_screen.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

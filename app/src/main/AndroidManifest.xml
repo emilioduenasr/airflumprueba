@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Amstairflumtest">
         <activity
+            android:name=".menu.Escenario_registrado"
+            android:exported="false" />
+        <activity
             android:name=".menu.Registrar_Escenario"
             android:exported="false" />
         <activity
