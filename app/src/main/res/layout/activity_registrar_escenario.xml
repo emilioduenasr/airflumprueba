@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".menu.Registrar_Escenario">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView100"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="200px"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/nameScenario"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:hint="Nombre del escenario" />
+    <EditText
+        android:id="@+id/locationScenario"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:hint="Ingrese la localización" />
+    <EditText
+        android:id="@+id/addresScenario"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:hint="Ingrese la dirección" />
+
+    <EditText
+        android:id="@+id/emergencyPhone"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="0999999999" />
+    <EditText
+        android:id="@+id/capacityScenario"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:hint="Ingrese la capacidad" />
+    <Button
+        android:id="@+id/btn_RegistrarE"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="Registrar"
+        android:textSize="16sp" />
+
+</LinearLayout>

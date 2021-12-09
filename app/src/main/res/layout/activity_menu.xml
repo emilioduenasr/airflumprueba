@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".menu.Menu">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView100"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="200px"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_EscenariosReg"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="Escenarios registrados"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_RegistrarEscen"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="Registrar nuevo escenario"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_cerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="Cerrar sesion"
+        android:textSize="16sp" />
+</LinearLayout>
