@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.amstairflumtest.R;
+
 public class Registrar_Escenario extends AppCompatActivity {
 
     @Override
