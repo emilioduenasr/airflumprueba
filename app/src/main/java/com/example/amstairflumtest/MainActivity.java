@@ -24,6 +24,7 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 import java.util.HashMap;
 
+
 public class MainActivity extends AppCompatActivity {
 
          FirebaseAuth mAuth;
