@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "323837756538-u7p3unpp90djrivq8f2m75ooniaii9l8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amstairflumtest",
+            "certificate_hash": "2deb7c01c8d9402bab032108017e790740a45bd7"
+          }
+        },
+        {
           "client_id": "323837756538-lnnmi2g6focfv2p88a57vvsi4cnl85ij.apps.googleusercontent.com",
           "client_type": 3
         }

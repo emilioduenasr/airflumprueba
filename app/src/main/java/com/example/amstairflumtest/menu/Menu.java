@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.amstairflumtest.MainActivity;
 import com.example.amstairflumtest.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Menu extends AppCompatActivity {
 
@@ -42,8 +44,12 @@ public class Menu extends AppCompatActivity {
         //Funcion para Cerrar Sesion
         btn_cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                finish();
+                Intent intent = new Intent(Menu.this, MainActivity.class);
+                intent.putExtra("msg", "cerrarSesion");
+                startActivity(intent);
             }
         });
 

@@ -51,25 +51,24 @@ public class MainActivity extends AppCompatActivity {
                 task -> updateUI(null));
     }
 
-        public void iniciarSesion(View view) {
+    public void iniciarSesion(View view) {
         resultLauncher.launch(new Intent(mGoogleSignInClient.getSignInIntent()));
     }
-    ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(new
-            ActivityResultContracts.StartActivityForResult(), new
-            ActivityResultCallback<ActivityResult>() {
-                @Override
-    public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        Intent intent = result.getData();
-                        Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(intent);
-                        try {
-                            GoogleSignInAccount account = task.getResult(ApiException.class);
-                            if (account != null) firebaseAuthWithGoogle(account);
-                            } catch (ApiException e) {
-                            Log.w("TAG", "Falló el inicio de sesión con google.", e);
-                            }
-                    }
+    ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+        @Override
+        public void onActivityResult(ActivityResult result) {
+            if (result.getResultCode() == Activity.RESULT_OK) {
+                Intent intent = result.getData();
+                Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(intent);
+                try {
+                    GoogleSignInAccount account = task.getResult(ApiException.class);
+                    if (account != null) firebaseAuthWithGoogle(account);
+                } catch (ApiException e) {
+                    Log.w("TAG", "Falló el inicio de sesión con google.", e);
                 }
+            }
+        }
     });
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d("TAG", "firebaseAuthWithGoogle:" + acct.getId());

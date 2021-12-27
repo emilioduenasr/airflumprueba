@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="@drawable/fondo"
     tools:context=".menu.Registrar_Escenario">
 
 
@@ -17,26 +17,33 @@
         android:layout_gravity="center"
         android:padding="10dp"
         android:layout_marginTop="200px"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/icon_registrar" />
 
     <EditText
         android:id="@+id/nameScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:hint="Nombre del escenario" />
+        android:hint="Nombre del escenario"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_add" />
     <EditText
         android:id="@+id/locationScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:hint="Ingrese la localización" />
+        android:hint="Ingrese la localización"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_new_location"/>
+
     <EditText
         android:id="@+id/addresScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:hint="Ingrese la dirección" />
+        android:hint="Ingrese la dirección"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_edit_location"/>
 
     <EditText
         android:id="@+id/emergencyPhone"
@@ -45,18 +52,29 @@
         android:gravity="center"
         android:inputType="phone"
         android:ems="10"
-        android:hint="0999999999" />
+        android:hint="Teléfono"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_phone" />
     <EditText
         android:id="@+id/capacityScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
         android:gravity="center"
-        android:hint="Ingrese la capacidad" />
+        android:hint="Ingrese la capacidad"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/ic_people"/>
     <Button
         android:id="@+id/btn_RegistrarE"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
         android:text="Registrar"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </LinearLayout>

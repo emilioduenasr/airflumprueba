@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:gravity="center"
+    android:background="@drawable/fondo"
     tools:context=".menu.Menu">
 
 
@@ -17,24 +17,47 @@
         android:layout_gravity="center"
         android:padding="10dp"
         android:layout_marginTop="200px"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/icon_user" />
 
     <Button
         android:id="@+id/btn_EscenariosReg"
-        android:layout_width="match_parent"
-        android:layout_height="81dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
         android:text="Escenarios registrados"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
     <Button
         android:id="@+id/btn_RegistrarEscen"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
+        android:paddingTop="0dp"
         android:text="Registrar nuevo escenario"
         android:textSize="16sp" />
+
     <Button
         android:id="@+id/btn_cerrarSesion"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:text="Cerrar sesion"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 </LinearLayout>
