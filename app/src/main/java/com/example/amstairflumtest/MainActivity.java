@@ -5,10 +5,14 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.amstairflumtest.menu.Menu;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -52,7 +56,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void iniciarSesion(View view) {
+        ConnectivityManager con = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = con.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+        }else {
+            Toast toast=Toast.makeText(getApplicationContext(),"No dispone de conexión",Toast.LENGTH_SHORT);
+            toast.show();
+        }
         resultLauncher.launch(new Intent(mGoogleSignInClient.getSignInIntent()));
+
     }
     ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {

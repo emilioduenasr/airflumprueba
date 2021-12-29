@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.amstairflumtest.MainActivity;
 import com.example.amstairflumtest.R;
@@ -50,6 +51,8 @@ public class Menu extends AppCompatActivity {
                 Intent intent = new Intent(Menu.this, MainActivity.class);
                 intent.putExtra("msg", "cerrarSesion");
                 startActivity(intent);
+                Toast toast=Toast.makeText(getApplicationContext(),"Sesión cerrada",Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
 
