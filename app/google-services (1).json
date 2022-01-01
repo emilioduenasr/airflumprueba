@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "323837756538",
+    "firebase_url": "https://airflumtest-default-rtdb.firebaseio.com",
     "project_id": "airflumtest",
     "storage_bucket": "airflumtest.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "323837756538-7vgndufde9rvsm84btmioplsipt2cikv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amstairflumtest",
+            "certificate_hash": "cf14db292c711b23c55f3ed1c88bb9d55432a1b9"
+          }
+        },
         {
           "client_id": "323837756538-g38uoug4ae6qqsgu1np5arcq2prn5838.apps.googleusercontent.com",
           "client_type": 1,
