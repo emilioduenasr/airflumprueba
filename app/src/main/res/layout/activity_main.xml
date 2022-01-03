@@ -30,6 +30,7 @@
             android:text="Iniciar sesión"
             android:textColor="@color/white"
             android:textSize="16sp"
+            android:fontFamily="@font/russo"
             style="?attr/materialButtonOutlinedStyle"
             app:strokeColor="@color/white"
             app:cornerRadius="50dp"/>

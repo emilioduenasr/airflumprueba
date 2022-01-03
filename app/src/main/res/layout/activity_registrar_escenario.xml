@@ -23,46 +23,48 @@
         android:id="@+id/nameScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
+        android:drawableStart="@drawable/ic_add"
         android:gravity="center"
         android:hint="Nombre del escenario"
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
-        android:drawableStart="@drawable/ic_add" />
-    <EditText
-        android:id="@+id/locationScenario"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:gravity="center"
-        android:hint="Ingrese la localización"
-        android:textColorHint="@color/white"
-        android:drawableStart="@drawable/ic_new_location"/>
+        android:fontFamily="@font/russo"/>
 
     <EditText
         android:id="@+id/addresScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
+        android:drawableStart="@drawable/ic_edit_location"
         android:gravity="center"
         android:hint="Ingrese la dirección"
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
-        android:drawableStart="@drawable/ic_edit_location"/>
+        android:fontFamily="@font/russo"/>
 
     <EditText
         android:id="@+id/emergencyPhone"
         android:layout_width="match_parent"
         android:layout_height="51dp"
-        android:gravity="center"
-        android:inputType="phone"
+        android:drawableStart="@drawable/ic_phone"
         android:ems="10"
-        android:hint="Teléfono"
+        android:gravity="center"
+        android:hint="Ingrese el teléfono"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
-        android:drawableStart="@drawable/ic_phone" />
+        android:fontFamily="@font/russo"/>
+
     <EditText
         android:id="@+id/capacityScenario"
         android:layout_width="match_parent"
         android:layout_height="51dp"
+        android:drawableStart="@drawable/ic_people"
         android:gravity="center"
         android:hint="Ingrese la capacidad"
+        android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
-        android:drawableStart="@drawable/ic_people"/>
+        android:fontFamily="@font/russo"/>
     <Button
         android:id="@+id/btn_RegistrarE"
         android:layout_width="match_parent"
@@ -75,6 +77,7 @@
         app:strokeColor="@color/white"
         app:cornerRadius="50dp"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:fontFamily="@font/russo"/>
 
 </LinearLayout>
