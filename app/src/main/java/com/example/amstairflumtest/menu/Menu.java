@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Menu extends AppCompatActivity {
 
-    Button btn_EscenariosReg, btn_RegistrarEscen, btn_cerrarSesion;
+    Button btn_EscenariosReg, btn_RegistrarEscen,btn_RegistrarDispos, btn_cerrarSesion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,8 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         btn_EscenariosReg= findViewById(R.id.btn_EscenariosReg);
-        btn_RegistrarEscen= findViewById(R.id.btn_RegistrarEscen);
+        btn_RegistrarDispos= findViewById(R.id.btn_RegistrarDispo);
+        btn_RegistrarEscen = findViewById(R.id.btn_RegistrarNEscenario);
         btn_cerrarSesion= findViewById(R.id.btn_cerrarSesion);
 
 
@@ -34,12 +35,20 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //Funcion para registrar nuevos escenarios
+        //Funcion para registrar nuevos Dispositivos
+        btn_RegistrarDispos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(Menu.this,Registrar_Dispositivo.class);
+                startActivity(intent2);
+            }
+        });
+        //Funion para cambiar al formulario Registrar Escenario
         btn_RegistrarEscen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this,Registrar_Escenario.class);
-                startActivity(intent);
+                Intent intent3 = new Intent(Menu.this,Registrar_Escenario.class);
+                startActivity(intent3);
             }
         });
         //Funcion para Cerrar Sesion

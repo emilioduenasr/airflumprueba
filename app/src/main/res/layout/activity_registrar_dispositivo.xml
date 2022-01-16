@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".menu.Registrar_Dispositivo">
+
+
+    <ImageView
+        android:id="@+id/imageView100"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="200px"
+        app:srcCompat="@drawable/icon_registrar" />
+
+    <EditText
+        android:id="@+id/nameDispositive"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableStart="@drawable/ic_add"
+        android:gravity="center"
+        android:hint="Nombre del Dispositivo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/russo"/>
+
+    <EditText
+        android:id="@+id/descriptionDispositive"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:drawableStart="@drawable/ic_description"
+        android:gravity="center"
+        android:hint="Ingrese la Descripción"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/russo"/>
+
+    <Button
+        android:id="@+id/btn_RegistrarDispositive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Registrar Dispositivo"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/russo"/>
+
+    <Button
+        android:id="@+id/RegistrarEscen"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/russo"
+        android:paddingTop="0dp"
+        android:text="Registrar nuevo Escenario"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white" />
+
+</LinearLayout>

@@ -1,10 +1,11 @@
 package com.example.amstairflumtest.menu.Clases;
 
 public class Clases {
-    String claseid, nombre,direccion, telefono, capacidad;
+    String claseid,nombreDispo, nombre,direccion, telefono, capacidad;
 
-    public Clases(String claseid, String nombre, String direccion, String telefono, String capacidad) {
+    public Clases(String claseid, String nombreDispo, String nombre, String direccion, String telefono, String capacidad) {
         this.claseid = claseid;
+        this.nombreDispo = nombreDispo;
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -17,6 +18,14 @@ public class Clases {
 
     public void setClaseid(String claseid) {
         this.claseid = claseid;
+    }
+
+    public String getNombreDispo() {
+        return nombreDispo;
+    }
+
+    public void setNombreDispo(String nombreDispo) {
+        this.nombreDispo = nombreDispo;
     }
 
     public String getNombre() {

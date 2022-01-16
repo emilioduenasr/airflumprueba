@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_escenario_registrado.xml" value="0.18" />
+        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_main.xml" value="0.12604166666666666" />
+        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.33" />
+        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_registrar_dispositivo.xml" value="0.25" />
         <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.25" />
         <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_main.xml" value="0.16246154322878156" />
         <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_splash_screen.xml" value="0.14030769642485683" />

@@ -34,7 +34,7 @@
         android:layout_marginRight="50dp"/>
 
     <Button
-        android:id="@+id/btn_RegistrarEscen"
+        android:id="@+id/btn_RegistrarDispo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -45,10 +45,24 @@
         app:cornerRadius="50dp"
         android:textColor="@color/white"
         android:paddingTop="0dp"
-        android:text="Registrar nuevo escenario"
+        android:text="Registrar nuevo Dispositivo"
         android:fontFamily="@font/russo"
         android:textSize="16sp" />
-
+    <Button
+        android:id="@+id/btn_RegistrarNEscenario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="50dp"
+        android:textColor="@color/white"
+        android:paddingTop="0dp"
+        android:text="Registrar nuevo Escenario"
+        android:fontFamily="@font/russo"
+        android:textSize="16sp" />
     <Button
         android:id="@+id/btn_cerrarSesion"
         android:layout_width="match_parent"
