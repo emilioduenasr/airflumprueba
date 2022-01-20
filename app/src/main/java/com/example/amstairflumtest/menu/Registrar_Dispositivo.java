@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Registrar_Dispositivo extends AppCompatActivity {
 
     EditText nombreDis, descripcionDis;
-    Button guardarDis, RegistEscenario;
+    Button guardarDis, RegistEscenario, EliminDisposit;
 
     //variable firebase
     private DatabaseReference mDatabase;
@@ -32,6 +32,16 @@ public class Registrar_Dispositivo extends AppCompatActivity {
         //Variables del Formulario
         nombreDis = (EditText) findViewById(R.id.nameDispositive);
         descripcionDis = (EditText) findViewById(R.id.descriptionDispositive);
+
+        EliminDisposit= (Button) findViewById(R.id.btn_DeleteDispositive);
+        EliminDisposit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Registrar_Dispositivo.this, Eliminar_Dispositivo.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         RegistEscenario = (Button) findViewById(R.id.RegistrarEscen);
         RegistEscenario.setOnClickListener(new View.OnClickListener() {
