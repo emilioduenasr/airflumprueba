@@ -51,7 +51,7 @@
                 android:fontFamily="@font/russo"
                 android:gravity="center"
                 android:hint="Ninguno"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textColorHint="@color/white" />
         </LinearLayout>
     </LinearLayout>

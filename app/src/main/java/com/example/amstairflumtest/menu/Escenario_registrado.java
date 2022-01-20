@@ -3,7 +3,9 @@ package com.example.amstairflumtest.menu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.amstairflumtest.R;
@@ -22,7 +24,7 @@ public class Escenario_registrado extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escenario_registrado);
-        db_reference = FirebaseDatabase.getInstance().getReference().child("Escenarios");
+        db_reference = FirebaseDatabase.getInstance().getReference().child("Dispositivos");
         leerRegistros();
     }
 
@@ -41,30 +43,72 @@ public class Escenario_registrado extends AppCompatActivity {
             });
         }
         public void mostrarRegistrosPorPantalla(DataSnapshot snapshot){
-            LinearLayout contName = (LinearLayout) findViewById(R.id.ContenedorName);
-            LinearLayout contAdd = (LinearLayout) findViewById(R.id.ContenedorAdd);
-            LinearLayout contFono = (LinearLayout) findViewById(R.id.ContenedorFono);
-            LinearLayout contAforo = (LinearLayout) findViewById(R.id.ContenedorAforo);
+            LinearLayout contDisp = (LinearLayout) findViewById(R.id.Disp);
 
             String nameVal = String.valueOf(snapshot.child("nombre").getValue());
-            String addVal = String.valueOf(snapshot.child("direccion").getValue());
-            String fonoVal = String.valueOf(snapshot.child("telefono").getValue());
-            String aforoVal = String.valueOf(snapshot.child("capacidad").getValue());
+            String descripVal = String.valueOf(snapshot.child("descripcion").getValue());
+
 
             TextView name = new TextView(getApplicationContext());
             name.setText(nameVal);
-            contName.addView(name);
+            contDisp.addView(name);
+            
 
-            TextView add = new TextView(getApplicationContext());
-            add.setText(addVal);
-            contAdd.addView(add);
+            TextView descrip = new TextView(getApplicationContext());
+            descrip.setText(descripVal);
+            contDisp.addView(descrip);
 
-            TextView fono = new TextView(getApplicationContext());
-            fono.setText(fonoVal);
-            contFono.addView(fono);
+            for (DataSnapshot snapshot1 : snapshot.child("Escenarios").getChildren()) {
+                LinearLayout contEsc = (LinearLayout) findViewById(R.id.escenarios);
 
-            TextView aforo = new TextView(getApplicationContext());
-            aforo.setText(aforoVal);
-            contAforo.addView(aforo);
+                String esceVal = String.valueOf(snapshot1.child("nombre").getValue());
+
+                TextView escenario = new TextView(getApplicationContext());
+                escenario.setText(esceVal);
+                contEsc.addView(escenario);
+
+                ///////
+                String aforoVal = String.valueOf(snapshot1.child("capacidad").getValue());
+
+                TextView aforo = new TextView(getApplicationContext());
+                aforo.setText(aforoVal);
+                contEsc.addView(aforo);
+
+                /////
+                String addVal = String.valueOf(snapshot1.child("direccion").getValue());
+
+                TextView add = new TextView(getApplicationContext());
+                add.setText(addVal);
+                contEsc.addView(add);
+
+                /////
+                String fonoVal = String.valueOf(snapshot1.child("telefono").getValue());
+
+                TextView fono = new TextView(getApplicationContext());
+                fono.setText(fonoVal);
+                contEsc.addView(fono);
+
+                /////
+                String tempVal = String.valueOf(snapshot1.child("temperatura").getValue());
+
+                TextView temp = new TextView(getApplicationContext());
+                temp.setText(tempVal+" °C");
+                contEsc.addView(temp);
+
+                /////
+                String gasVal = String.valueOf(snapshot1.child("gas").getValue());
+
+                TextView gas = new TextView(getApplicationContext());
+                gas.setText(gasVal+" ppm");
+                contEsc.addView(gas);
+
+                /////
+                String humVal = String.valueOf(snapshot1.child("humedad").getValue());
+
+                TextView hum = new TextView(getApplicationContext());
+                hum.setText(humVal+" %");
+                contEsc.addView(hum);
+            }
+
         }
     }

@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:padding="10dp"
         android:layout_marginTop="200px"
-        app:srcCompat="@drawable/icon_registrar" />
+        app:srcCompat="@drawable/icon_dispositivo" />
 
     <EditText
         android:id="@+id/nameDispositive"
