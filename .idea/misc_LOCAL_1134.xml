@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
@@ -38,40 +37,4 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.1" />
-        <entry key="..\:/Clases virtuales/Aplicaciones moviles/Nueva carpeta/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.25" />
-        <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_main.xml" value="0.16246154322878156" />
-        <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_splash_screen.xml" value="0.14030769642485683" />
-        <entry key="..\:/Users/emili/AndroidStudioProjects/amstairflumtest/app/src/main/res/layout/activity_usuario.xml" value="0.16246154322878156" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/drawable/boton.xml" value="0.25625" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/drawable/btn_login.xml" value="0.25625" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/drawable/ic_new_location.xml" value="0.25625" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_escenario_registrado.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_prueba.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.264" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/SPRINT1/airflumprueba/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
-        <entry key="..\:/Users/usuario/Desktop/airflumprueba/app/src/main/res/layout/activity_escenario_registrado.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/usuario/Desktop/airflumprueba/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/usuario/Desktop/airflumprueba/app/src/main/res/layout/activity_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/usuario/Desktop/airflumprueba/app/src/main/res/layout/activity_registrar_escenario.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/usuario/Desktop/airflumprueba/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
->>>>>>> 9ae69118bdcd84cc5664e145978857ef24cf6f39
 </project>
