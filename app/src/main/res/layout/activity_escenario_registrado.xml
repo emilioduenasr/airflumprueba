@@ -12,39 +12,41 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DATOS REGISTRADOS"
+        android:text="DISPOSITIVOS REGISTRADOS"
         android:textSize="25dp"
         android:gravity="center"
         android:layout_marginTop="50dp"
         android:textColor="@color/white"
         android:fontFamily="@font/russo"/>
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        app:cardCornerRadius="15dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:id="@+id/Disp"
-            android:layout_width="wrap_content"
+            android:id="@+id/Madre"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/rojo"
             android:gravity="center"
             android:padding="20dp"
             android:orientation="vertical">
-            <LinearLayout
-                android:id="@+id/escenarios"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn_WS"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:gravity="center"
-                android:padding="20dp"
-                android:orientation="vertical">
-
-            </LinearLayout>
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:text="Contacto de emergencia"
+                style="?attr/materialButtonOutlinedStyle"
+                app:strokeColor="@color/white"
+                app:cornerRadius="50dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/russo"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+
 
 
 

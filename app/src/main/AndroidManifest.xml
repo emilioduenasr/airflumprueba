@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Amstairflumtest">
         <activity
+            android:name=".Datos_Dispositivos"
+            android:exported="false" />
+        <activity
             android:name=".menu.Eliminar_Dispositivo"
             android:exported="false" />
         <activity
